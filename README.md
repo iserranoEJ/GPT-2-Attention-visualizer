@@ -20,66 +20,69 @@ This project provides an interactive visualization of attention patterns in Dist
 
 1. Clone the repository:
 
-```bash
-git clone [your-repo-url]
-cd attention-visualizer
-```
+   ```bash
+   git clone https://github.com/iserranoEJ/GPT-2-Attention-visualizer.git
+   cd attention-visualizer
+   ```
 
 2. Install Frontend Dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Set up Python Virtual Environment:
 
-```bash
-# Create virtual environment
-python -m venv venv
+   ```bash
+   # Create virtual environment
+   python -m venv venv
 
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
+   # Activate virtual environment
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
 
-# Install Python dependencies
-pip install -r requirements.txt
-```
+   # Install Python dependencies
+   pip install -r requirements.txt
+   ```
 
 ## Running the Application
 
 1. First, start the backend server:
 
-```bash
-# Make sure your virtual environment is activated
-npm run backend
-```
+   ```bash
+   # Make sure your virtual environment is activated
+   npm run backend
+   ```
 
-The backend server will start on <http://localhost:5000>
+   The backend server will start on <http://localhost:5000>
 
 2. In a new terminal, start the frontend development server:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-The frontend will be available at <http://localhost:5173> (or similar URL shown in terminal)
+   The frontend will be available at <http://localhost:5173> (or similar URL shown in terminal)
 
 ## Project Structure
 
-```
-attention-visualizer/
-├── src/
-│   ├── backend/
-│   │   └── app.py         # Flask backend server
-│   ├── App.jsx            # Main React component
-│   └── AttentionVisualization.jsx  # Visualization component
-├── package.json
-├── requirements.txt       # Python dependencies
-├── vite.config.js
-└── README.md
-```
+   ```text
+   attention-visualizer/
+   ├── src/
+   │   ├── backend/
+   │   │   └── app.py         # Flask backend server
+   │   ├── frontend/
+   │     └──components/
+   │          └── AttentionVisualization.jsx  # Visualization component
+   │          └── InteractiveVisualization # Alternative visualization component (currently used)
+   │     └──App.jsx            # Main React component
+   ├── package.json
+   ├── requirements.txt       # Python dependencies
+   ├── vite.config.js
+   └── README.md
+   ```
 
 ## Usage
 
@@ -105,7 +108,3 @@ attention-visualizer/
 - `npm run backend`: Start the Python backend server
 - `npm run preview`: Preview the production build locally
 - `npm run lint`: Run ESLint
-
-## License
-
-[Your License Here]
