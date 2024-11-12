@@ -2,6 +2,8 @@
 
 This project provides an interactive visualization of attention patterns in DistilGPT-2 model. It consists of a React frontend and a Flask backend that interfaces with the Hugging Face Transformers library.
 
+![Attention visualization](images/attention.png)
+
 ## Features
 
 - Interactive text input for analysis
@@ -35,7 +37,7 @@ This project provides an interactive visualization of attention patterns in Dist
 
    ```bash
    # Create virtual environment
-   python -m venv venv
+   python3 -m venv venv
 
    # Activate virtual environment
    # On Windows:
